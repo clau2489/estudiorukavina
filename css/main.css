@@ -2385,11 +2385,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-feature:hover {
   cursor: pointer;
-  color: #fff;
+  color: #000;
 }
 
 .single-feature:hover a, .single-feature:hover .title .lnr {
-  color: #fff;
+  color: #000;
 }
 
 .single-feature .title .lnr {
