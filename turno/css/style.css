@@ -30,10 +30,8 @@ img{max-width:100%;}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
-    background-color: darkgray;
 }
 .bg-agile {
-    width: 65%;
     margin: 0 auto;
 }
 
@@ -60,12 +58,10 @@ h1 {
     font-family: 'Droid Sans', sans-serif;
 }
 .book-appointment {
-    background:rgba(1, 38, 64, 0.68);
-    padding: 50px 30px;
+
 }
 .book-appointment input[type="text"], .book-appointment input[type="date"], .book-appointment input[type="time"], .book-appointment input[type="email"],textarea {
     width: 85%;
-    color: #fff;
     outline: none;
     font-size: 0.9em;
     line-height: 25px;
@@ -75,7 +71,6 @@ h1 {
     -webkit-appearance: none;
     margin: .3em 0em 1em;
     font-family: 'Roboto', sans-serif;
-    background: rgba(127, 178, 212, 0.31);
 }
 textarea {
 	resize:none;
@@ -150,15 +145,10 @@ input[type=submit]:hover {
     height: 3px;
 }
 .left-agileits-w3layouts {
-    width: 49%;
-    float: left;
 }
 .right-agileinfo {
-    width: 49%;
-    float: left;
 }
 .book-appointment p {
-    color: #d6eefe;
     font-size: 17px;
     letter-spacing: .5px;
 	
@@ -544,3 +534,7 @@ p.wickedpicker__title {
 	}
 }
 /*--responsive--*/
+
+.turno{
+	background-color: aliceblue;
+}

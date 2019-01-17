@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Correo PHP</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    
+  </head>
+  <body>
+        
+    <div class="container">      
+        <div class="row">
+          <div class="col-xs-12"> 
+          <h1>Enviar correo através de formulario de contacto con PHP</h1>         
+            
+            <form id = "formulario" role="form" action="" method="POST">
+                                
+                <div class="form-group">
+                  <label for="nombre">Nombre de usuario</label>
+                  <input id="nombre" type="text" name="nombre" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="asunto">Asunto</label>
+                  <input id="asunto" type="text" name="asunto" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input id="email" type="email" name="email" class="form-control" required>
+                </div>
+
+                
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje" class="form-control" rows="6" required></textarea>
+                </div>
+
+
+                <input id="submit_button" name="enviar" type="submit" value="Enviar" />
+
+                <button id="borrar" type="reset">Borrar</button>
+
+                
+                <div id="resultado"></div>
+                
+            </form>
+
+          </div>
+        </div>
+      </div>    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/conecta.js"></script>
+  </body>
+</html>

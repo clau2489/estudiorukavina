@@ -234,24 +234,32 @@
 								<p>Le responderemos en el transcurso de 24hs.</p>
 							</div>							
 						</div>
-					</div>										
-					<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
-						<div class="row">
-							<div class="col-md-2">							
-							</div>	
-							<div class="col-lg-8 form-group">
-								<input name="name" placeholder="Nombre" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'" class="common-input mb-20 form-control" required="" type="text">
-								<input name="lastname" placeholder="Apellido" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-								<input name="email" placeholder="e-mail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-								<input name="subject" placeholder="Asunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
-								<textarea class="common-textarea mt-10 form-control" name="message" placeholder="Mensaje" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-								<input type="submit" class="primary-btn"></input>
-								<div class="alert-msg"></div>		
-							</div>
-							<div class="col-md-2">							
-							</div>	
-						</div>
-					</form>					
+					</div>
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+				            <form id ="formulario" role="form" action="" method="POST">		                                
+				                <div class="form-group">
+				                  <label for="nombre">Nombre y Apellido</label>
+				                  <input id="nombre" type="text" name="nombre" class="form-control" required>
+				                </div>
+				                <div class="form-group">
+				                  <label for="asunto">Asunto</label>
+				                  <input id="asunto" type="text" name="asunto" class="form-control" required>
+				                </div>		                
+				                <div class="form-group">
+				                  <label for="email">E-mail</label>
+				                  <input id="email" type="email" name="email" class="form-control" required>
+				                </div>		                
+				                <div class="form-group">
+				                  <label for="mensaje">Mensaje</label>
+				                  <textarea id="mensaje" name="mensaje" class="form-control" rows="6" required></textarea>
+				                </div>
+				                <input id="submit_button" name="enviar" type="submit" value="Enviar" />
+				                <button id="borrar" type="reset">Borrar</button>		                
+				                <div id="resultado"></div>		                
+				            </form>						
+						</div>						
+					</div>															
 				</div>	
 			</section>
 
@@ -262,38 +270,13 @@
 							<div class="title text-center">
 								<h1 class="mb-10">Reserve su turno</h1>
 								<p>Nuestros representantes se comunicaran con usted para brindarle un asesoramiento personalizado</p>
-								<a href="turno/index.html" class="button">Reservar Aqui</a> 
+								<a href="turno/index.html" class="btn btn-success">Reservar Aqui</a> 
 							</div>							
 						</div>
 					</div>															
 				</div>	
 			</section>
 
-
-			<section class="contact-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<h1 class="mb-10">Nuestras oficinas</h1>
-							<p>Direccion - altura - Partido/Ciudad.</p>
-							<p>Dias y Horario de Atención:</p>
-							<p>Telefonos de contacto</p>
-							<br>
-							<p>Direccion - altura - Partido/Ciudad.</p>
-							<p>Dias y Horario de Atención:</p>
-							<p>Telefonos de contacto</p>
-							<br>
-							<p>Direccion - altura - Partido/Ciudad.</p>
-							<p>Dias y Horario de Atención:</p>
-							<p>Telefonos de contacto</p>							
-						</div>
-						<div class="col-md-8">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d72208.1695291404!2d-58.52837189504641!3d-34.586231348736995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1535721768892" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>						
-					</div>					
-				</div>	
-			</section>
-	
 			<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
@@ -328,7 +311,11 @@
 					</div>						
 				</div>	
 			</div>
-
+		    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		    <script src="js/bootstrap.min.js"></script>
+		    <script src="js/conecta.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>
 			<script src="js/jquery.ajaxchimp.min.js"></script>
