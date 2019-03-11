@@ -99,6 +99,52 @@ if($estadoEnvio){
 		</body>
 	</html>';
 } else {
-    $miresultado = '<h4>No se envío el correo.</h4>';
+    $miresultado = '<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="img/fav.png">
+		<meta name="author" content="oeste-dev">
+		<meta name="description" content="estudio de abogados">
+		<meta name="keywords" content="">
+		<meta charset="UTF-8">
+		<title>Tamame Rukavina & Asoc.</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<link rel="stylesheet" href="../css/linearicons.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<link rel="stylesheet" href="../css/magnific-popup.css">
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<link rel="stylesheet" href="../css/owl.carousel.css">
+		<link rel="stylesheet" href="../css/main.css">
+	</head>
+		<body>
+			<section class="text-center" id="contact">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">No se pudo procesar la reserva. POr favor reintente..</p>
+								<a href="../index.html" class="btn btn-success">Continuar Navegando</a> 
+							</div>							
+						</div>
+					</div>															
+				</div>	
+			</section>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		    <script src="js/bootstrap.min.js"></script>
+		    <script src="js/conecta.js"></script>
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/slick.js"></script>
+			<script src="js/jquery.counterup.min.js"></script>
+			<script src="js/waypoints.min.js"></script>		
+			<script src="js/main.js"></script>	
+		</body>
+	</html>';
 }
 echo $miresultado;
