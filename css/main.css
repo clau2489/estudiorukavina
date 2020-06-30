@@ -1,11 +1,3 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #b01afe;
@@ -15,16 +7,44 @@
     font-size: initial;
     color: slategrey;
 }
-#secvice{
+#turno {
+    background-image: url("../img/turno.jpg");
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 2000px rgb(255, 255, 255); */
+    min-height: 100%; */
 }
-#contact {
-    background-color: #f3f3f38f;
+.te {
+    text-align: initial;
+    font-family: sans-serif;
+}
+.texto-turno {
+    color: #3F51B5;
+    font-family: sans-serif;
+    font-size: xx-large;
+    text-transform: uppercase;
+    margin-top: 30%;
+}
+.texto-turno-dos {
+    color: #3F51B5;
+    /* font-family: inherit; */
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    line-height: normal;
+    font-weight: bold;
 }
 .copy {
     background-color: black;
     color: white;
     font-size: smaller;
     padding-top: 0.1em;
+}
+.cont-turno{
+    background-image: url("../img/turno.jpg");
+    background-size: cover;
+    /* box-shadow: inset 0 0 0 2000px rgb(255, 255, 255); */
+    min-height: 100%; */
+  }
+.form-tt {
 }
 ::selection {
   background-color: #484646;
@@ -65,7 +85,7 @@
 
 body {
   color: #000000;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.625em;
@@ -132,7 +152,6 @@ a, a:focus, a:hover {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
   color: #222222;
   line-height: 1.2em !important;
   margin-bottom: 0;
@@ -1923,8 +1942,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-nav a {
-  color: #fff;
-  padding: 1em;
+    color: #c4bb4f;
+    padding: 1em;
 }
 
 @media (max-width: 992px) {
@@ -1939,9 +1958,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.section-gap {
-  padding-top: 4em;
-  padding-bottom: 4em;
+.section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background-color: white;
 }
 
 .section-title {
@@ -1962,21 +1982,6 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
-
-/*
-.p1-gradient-bg, .primary-btn, .primary-btn2:hover, .single-feature:hover, .video-area .overlay-bg, .single-footer-widget .click-btn, .generic-banner {
-    background-image: -moz-linear-gradient(0deg, #b3bbbf 0%, #b3bbbf 100%);
-    background-image: -webkit-linear-gradient(0deg, #111 0%, #222 100%);
-    background-image: -ms-linear-gradient(0deg, #b3bbbf 0%, #b3bbbf 100%);
-}
-
-.p1-gradient-color, .counter-left h2, .footer-social a:hover i, .single-footer-widget .bb-btn {
-  background: -moz-linear-gradient(0deg, #ffc107 0%, #fdfdfd 100%);
-  background: -webkit-linear-gradient(0deg, #ffc107 0%, #fdfdfd 100%);
-  background: -ms-linear-gradient(0deg, #ffc107 0%, #fdfdfd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
 
 .primary-btn {
   line-height: 42px;
@@ -2081,13 +2086,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .is-sticky .default-header {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  background-color: #34495E;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #38516b;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
-
+.title-areas {
+    padding: 2em;
+    background-color: #f7f7f785;
+    margin-bottom: 2em;
+}
+.plex {
+    padding-bottom: 1em;
+    border-style: solid;
+    border-color: #fbf9f9;
+    margin-bottom: 4em;
+}
 .dropdown-item {
   font-size: 14px;
   width: auto !important;
@@ -2369,14 +2386,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-feature {
-    background-color: #cccccc36;
+    background-color: #ffffff36;
     padding: 30px 30px 15px 30px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    border-style: groove;
-    border-color: #fbfbfb21;
+    border-style: solid;
+    border-color: #eaeaea;
 }
 
 .single-feature a {
@@ -2572,8 +2589,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-area {
-  padding-top: 100px;
-  background-color: #34495e;
+    padding-top: 100px;
+    background-color: #27394c;
 }
 
 h6 {
